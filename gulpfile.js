@@ -5,11 +5,16 @@ const gulp         = require("gulp"),
       cssvars      = require("postcss-simple-vars"),
       cssimport    = require("postcss-import"),
       cssnested    = require("postcss-nested"),
-      browserSync = require("browser-sync").create();
+      cssmixins    = require("postcss-mixins"),
+      browserSync  = require("browser-sync").create();
 
 gulp.task("styles", function(){
   return gulp.src("./app/assets/styles/styles.css")
-    .pipe(postcss([cssimport, cssvars, autoprefixer, cssnested]))
+    .pipe(postcss([cssimport, cssvars, cssmixins, autoprefixer, cssnested]))
+    .on("error", function(errorInfo){
+      console.log(errorInfo.toString());
+      this.emit("end");
+    })
     .pipe(gulp.dest("./app/temp/styles"));
 });
 

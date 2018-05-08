@@ -8,4 +8,19 @@
   &--large{
     max-width: 1520px;
   }
+
+  .wrapper{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--no-padding-until-medium{
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atMedium{
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
 }

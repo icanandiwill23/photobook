@@ -1,7 +1,7 @@
 .btn{
-  font-size: 1.5em;
+  font-size: 1rem;
   text-transform: uppercase;
-  padding: 18px 36px;
+  padding: 10px 20px;
   border: 1px solid #000;
   border-radius: 10px;
   display: inline-block;
@@ -9,4 +9,9 @@
   text-decoration: none;
   color: #000;
   word-spacing: 1.5;
+
+  @mixin atSmall{
+    font-size: 1.5rem;
+    padding: 18px 36px;
+  }
 }
