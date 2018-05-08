@@ -1,7 +1,5 @@
-body{
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-img{
-  max-width: 100%;
-}
+@import "normalize.css";
+@import "base/_global";
+@import "modules/_large-hero";
+@import "modules/_wrapper";
+@import "modules/_btn";
