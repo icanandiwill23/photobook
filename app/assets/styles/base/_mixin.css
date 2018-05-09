@@ -15,3 +15,17 @@
     @mixin-content;
   }
 }
+
+@define-mixin atLarger{
+  @media only screen and (min-width: 1102px){
+    @mixin-content;
+  }
+}
+
+@define-mixin clearfix{
+  &:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
