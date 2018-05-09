@@ -25,15 +25,16 @@
   </section>
 
   <section class="large-hero">
-    <div class="wrapper wrapper--large wrapper--no-padding-until-medium">
-      <picture>
-        <img srcset="assets/images/hero-smaller-i.jpg 640w, assets/images/hero-smaller-hi-dpi-i.jpg 1280w" alt="An open photo album">
-      </picture>
-      <div class="large-hero__text-content">
-        <h1 class="large-hero__title"><span class="large-hero__title-start">C</span>reate your own photostory</h1>
-        <h3 class="large-hero__subtitle">Make your photobook online</h3>
-        <p><a class="btn" href="#">Make your photobook</a></p>
-      </div>
+    <picture>
+      <source srcset="assets/images/hero-large.jpg 1536w, assets/images/hero-large-hi-dpi.jpg 3072w" media="(min-width: 1380px)">
+      <source srcset="assets/images/hero-medium.jpg 1380w, assets/images/hero-medium-hi-dpi.jpg 2760w" media="(min-width: 990px)">
+      <source srcset="assets/images/hero-small.jpg 990w, assets/images/hero-small-hi-dpi.jpg 1980w" media="(min-width: 640px)">
+      <img srcset="assets/images/hero-smaller.jpg 640w, assets/images/hero-smaller-hi-dpi.jpg 1280w" alt="An open photo album">
+    </picture>
+    <div class="large-hero__text-content">
+      <h1 class="large-hero__title"><span class="large-hero__title-start">C</span>reate your own photostory</h1>
+      <h3 class="large-hero__subtitle">Make your photobook online</h3>
+      <p><a class="btn" href="#">Make your photobook</a></p>
     </div>
   </section>
 
