@@ -15,9 +15,8 @@
   &__item__image-container{
     border: 6px solid $mainYellow;
     border-radius: 50%;
-    padding: 40px 37px 34px 37px;
-    width: 64px;
-    text-align: center;
+    height: 140px;
+    width: 140px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -28,15 +27,19 @@
     }
   }
 
-  &__item__image{
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__item__dashed{
     position: absolute;
     top: 50%;
-    right: -100%;
+    right: -97%;
     width: 100%;
-    max-width: 133px;
+    max-width: 130px;
     display: none;
 
     @mixin atLarger{
