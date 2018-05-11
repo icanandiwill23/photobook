@@ -3,6 +3,19 @@
   border-radius: 12px;
   width: 100%;
   position: relative;
+  margin-bottom: 2rem;
+
+  @mixin atLarge{
+    margin-bottom: 0;
+  }
+
+  &--m-b-until-large{
+    margin-bottom: 4rem;
+
+    @mixin atLarge{
+      margin-bottom: 0;
+    }
+  }
 
   &__pre-title{
     margin: 0;

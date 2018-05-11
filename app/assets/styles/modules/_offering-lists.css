@@ -9,12 +9,28 @@
   li{
     list-style: none;
     padding-bottom: 18px;
+
+    @mixin atSmall{
+      position: relative;
+      left: 50%;
+      transform: translateX(-20%);
+    }
+
+    @mixin atMedium{
+      transform: translateX(-15%);
+    }
+
+    @mixin atLarge{
+      left: 0;
+      transform: translate(0);
+    }
   }
 
   &__image{
     position: relative;
     top: 5px;
     margin-right: 19px;
+    display: inline-block;
   }
 
   &__text{
