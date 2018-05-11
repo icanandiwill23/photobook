@@ -1,0 +1,89 @@
+.ready-solutions{
+  border: 6px solid $mainYellow;
+  border-radius: 12px;
+  width: 100%;
+  position: relative;
+
+  &__pre-title{
+    margin: 0;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    background-color: $mainYellow;
+    text-align: center;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: $mainRed;
+    font-size: 1.2975rem;
+    letter-spacing: 2px;
+    padding: 15px 0;
+
+    &:before{
+      position: absolute;
+      left: -17%;
+      top: -1%;
+      content: "";
+      height: 0;
+      width: 0;
+      border-top: 1.5rem solid transparent;
+      border-bottom: 1.5rem solid transparent;
+      border-right: 1.5rem solid $mainYellow;
+    }
+
+    &:after{
+      position: absolute;
+      right: -17%;
+      top: -1%;
+      content: "";
+      height: 0;
+      width: 0;
+      border-top: 1.5rem solid transparent;
+      border-bottom: 1.5rem solid transparent;
+      border-left: 1.5rem solid $mainYellow;
+    }
+  }
+
+  &__title{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    background-color: $mainYellow;
+    margin: 0;
+    padding: 47px 0;
+    letter-spacing: 2px;
+  }
+
+  &__title__caps{
+    font-size: 2.25rem;
+  }
+
+  &__price{
+    font-size: 3.75rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 4.5rem;
+  }
+
+  &__price--t-margin-large{
+    margin-top: 5rem;
+  }
+
+  &__price--t-margin-medium{
+    margin-top: 2.3rem;
+  }
+
+  &__footer{
+    text-align: center;
+    background-color: $mainYellow;
+    font-size: 1.5em;
+    font-weight: 300;
+    margin: 0;
+    padding: 17px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+}

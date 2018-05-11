@@ -2,6 +2,14 @@
 
   @mixin clearfix;
 
+  &--gutters{
+    margin-right: -69px;
+  }
+
+  &--gutters > div{
+    padding-right: 69px;
+  }
+
   @mixin atSmall{
     &__small-6{
       float: left;
@@ -10,6 +18,14 @@
   }
 
   @mixin atMedium{
+    &--equal-height-on-medium{
+      display: flex;
+
+      & > div{
+        display: flex;
+      }
+    }
+
     &__medium-3{
       width: 25%;
       float: left;
