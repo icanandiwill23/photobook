@@ -1,5 +1,6 @@
 .advantage-item{
   margin-bottom: 3rem;
+  width: 100%;
 
   @mixin atLarge{
     margin-bottom: 0;
