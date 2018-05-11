@@ -1,0 +1,33 @@
+.advantage-item{
+  margin-bottom: 3rem;
+
+  @mixin atLarge{
+    margin-bottom: 0;
+  }
+
+  &__image{
+    height: 267px;
+    width: 267px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  &__text{
+    text-align: center;
+    width: 17.1825rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &--centered{
+    text-align: center;
+  }
+}

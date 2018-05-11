@@ -14,4 +14,16 @@
     font-size: 1.5rem;
     padding: 18px 36px;
   }
+
+  &--red{
+    background-color: $mainRed;
+    color: #fff;
+    border-color: transparent;
+  }
+
+  @mixin atLarge{
+    &--t-margin-at-large{
+      margin-top: 70px;
+    }
+  }
 }

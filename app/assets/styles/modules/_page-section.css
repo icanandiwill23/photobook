@@ -1,0 +1,7 @@
+.page-section{
+  padding: 4rem 0;
+
+  &--dirty-white{
+    background-color: $dirtyWhite;
+  }
+}

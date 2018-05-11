@@ -1,0 +1,23 @@
+.section-title{
+  font-size: 2.4rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+
+  @mixin atSmall{
+    font-size: 3.3rem;
+  }
+
+  &__title-start{
+    font-size: 2.7rem;
+
+    @mixin atSmall{
+      font-size: 4rem;
+    }
+  }
+
+  &--no-t-margin{
+    margin-top: 0;
+  }
+}
