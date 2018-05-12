@@ -46,6 +46,10 @@
       }
     }
 
+    &--top-padding-on-large{
+      padding-top: 20px;
+    }
+
     &__large-3{
       float: left;
       width: 25%;

@@ -577,6 +577,10 @@ img{
         display: flex;
       }
 
+    .row--top-padding-on-large{
+      padding-top: 20px;
+    }
+
     .row__large-3{
       float: left;
       width: 25%;
