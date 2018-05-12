@@ -8,4 +8,8 @@
   &--dirty-white{
     background-color: $dirtyWhite;
   }
+
+  &--testimonials-bg{
+    background: url("/assets/images/testimonials-bg-hi-dpi.jpg") no-repeat top center;
+  }
 }

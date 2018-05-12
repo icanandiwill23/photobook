@@ -35,6 +35,11 @@
       width: 33.33%;
       float: left;
     }
+
+    &__medium-8{
+      width: 66.66%;
+      float: left;
+    }
   }
 
   @mixin atLarge{

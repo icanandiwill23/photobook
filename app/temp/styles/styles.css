@@ -442,7 +442,7 @@ img{
   font-weight: 300;
   text-decoration: none;
   color: #000;
-  word-spacing: 1.5;
+  word-spacing: 1.5px;
 }
 
 @media only screen and (min-width: 530px){
@@ -564,6 +564,11 @@ img{
 
     .row__medium-4{
       width: 33.33%;
+      float: left;
+    }
+
+    .row__medium-8{
+      width: 66.66%;
       float: left;
     }
   }
@@ -729,6 +734,10 @@ img{
     background-color: #f3f0e7;
   }
 
+.page-section--testimonials-bg{
+    background: url("/assets/images/testimonials-bg-hi-dpi.jpg") no-repeat top center;
+  }
+
 .section-title{
   font-size: 2.4rem;
   font-weight: 100;
@@ -757,6 +766,10 @@ img{
 
 .section-title--no-t-margin{
     margin-top: 0;
+  }
+
+.section-title--left-align{
+    text-align: left;
   }
 
 .ready-solutions{
@@ -918,4 +931,75 @@ img{
 .offering_lists__text{
     font-size: 1.3rem;
     font-weight: 400;
+  }
+
+.testimonials{
+  position: relative;
+}
+
+.testimonials__text-content{
+
+  }
+
+.testimonials__testimony{
+    float: left;
+    margin-right: 28px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+.testimonials__testimony-info{
+    padding-top: 9%;
+  }
+
+.testimonials__testimony-info:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.testimonials__name{
+    font-size: 1.875rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: .1em;
+    text-transform: uppercase;
+  }
+
+.testimonials__position{
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+.testimonials__description{
+    width: 34.6875rem;
+    margin-bottom: 40px;
+  }
+
+.testimonials__next{
+    display: block;
+    text-align: right;
+    width: 34.6875rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+  }
+
+.testimonials__arrow{
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+  }
+
+.testimonials__link{
+    margin-top: 112px;
+    width: 34.6875rem;
+    text-align: center;
+  }
+
+.generic-content-container p{
+    font-size: 1.125rem;
+    font-weight: 300;
   }

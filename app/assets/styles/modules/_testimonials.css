@@ -1,0 +1,59 @@
+.testimonials{
+  position: relative;
+
+  &__text-content{
+
+  }
+
+  &__testimony{
+    float: left;
+    margin-right: 28px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__testimony-info{
+    @mixin clearfix;
+    padding-top: 9%;
+  }
+
+  &__name{
+    font-size: 1.875rem;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: .1em;
+    text-transform: uppercase;
+  }
+
+  &__position{
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  &__description{
+    width: 34.6875rem;
+    margin-bottom: 40px;
+  }
+
+  &__next{
+    display: block;
+    text-align: right;
+    width: 34.6875rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: 300;
+  }
+
+  &__arrow{
+    transform: scaleX(1.2);
+  }
+
+  &__link{
+    margin-top: 112px;
+    width: 34.6875rem;
+    text-align: center;
+  }
+}

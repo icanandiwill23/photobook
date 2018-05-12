@@ -8,7 +8,7 @@
   font-weight: 300;
   text-decoration: none;
   color: #000;
-  word-spacing: 1.5;
+  word-spacing: 1.5px;
 
   @mixin atSmall{
     font-size: 1.5rem;
