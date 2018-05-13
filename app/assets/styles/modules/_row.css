@@ -10,6 +10,17 @@
     padding-right: 69px;
   }
 
+  &--gutters-large > div{
+    padding-right: 80px;
+  }
+
+  @mixin atLarge{
+    &--gutters-large-on-large > div{
+      padding-right: 80px;
+    }
+  }
+
+
   @mixin atSmall{
     &__small-6{
       float: left;
@@ -63,6 +74,20 @@
     &__large-4{
       float: left;
       width: 33.33%;
+    }
+
+    &__large-offset-6{
+      margin-left: 50%;
+    }
+
+    &__large-6{
+      float: left;
+      width: 50%;
+    }
+
+    &__large-8{
+      float: left;
+      width: 66.66%;
     }
   }
 }

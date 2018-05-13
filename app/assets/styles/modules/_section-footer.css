@@ -1,0 +1,59 @@
+.section-footer{
+  background-color: $mainYellow;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__nav{
+    border-top: 1px solid #000;
+
+    ul{
+      padding: 0;
+    }
+
+    li{
+      list-style: none;
+      padding: 5px 0;
+      font-size: .8rem;
+
+      @mixin atSmall{
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  &__nav--b-margin{
+    margin-bottom: 30px;
+
+    @mixin atLarge{
+      margin-bottom: 50px;
+    }
+  }
+
+  &__nav--inline{
+    @mixin clearfix;
+    li{
+      float: left;
+      padding-right: 20px;
+    }
+  }
+
+  &__author{
+    border: 1px solid #000;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 23px;
+    border-radius: 10px;
+  }
+
+  &__author-text{
+    font-size: 0.6925rem;
+  }
+
+  &__copyrights{
+    text-align: center;
+    margin-top: 40px;
+  }
+}
