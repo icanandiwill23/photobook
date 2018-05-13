@@ -2,21 +2,31 @@
   position: relative;
 
   &__text-content{
-
   }
 
   &__testimony{
-    float: left;
-    margin-right: 28px;
     height: 160px;
     width: 160px;
     border-radius: 50%;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+    @mixin atMedium{
+      float: left;
+      margin-right: 28px;
+      margin-left: 0;
+    }
   }
 
   &__testimony-info{
     @mixin clearfix;
-    padding-top: 9%;
+    padding-top: 4%;
+    text-align: center;
+
+    @mixin atMedium{
+      text-align: left;
+    }
   }
 
   &__name{
@@ -34,26 +44,41 @@
   }
 
   &__description{
-    width: 34.6875rem;
-    margin-bottom: 40px;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
+
+    @mixin atLarge{
+      text-align: left;
+      width: 34.6875rem;
+      margin-bottom: 40px;
+    }
   }
 
   &__next{
     display: block;
     text-align: right;
-    width: 34.6875rem;
+    width: 100%;
     text-decoration: none;
     color: #000;
     font-weight: 300;
-  }
 
-  &__arrow{
-    transform: scaleX(1.2);
+    &:hover{
+      text-decoration: underline;
+    }
+
+    @mixin atLarge{
+      width: 34.6875rem;
+    }
   }
 
   &__link{
     margin-top: 112px;
-    width: 34.6875rem;
     text-align: center;
+    width: 100%;
+
+    @mixin atLarge{
+      width: 34.6875rem;
+    }
   }
 }

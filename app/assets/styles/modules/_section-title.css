@@ -21,7 +21,9 @@
     margin-top: 0;
   }
 
-  &--left-align{
-    text-align: left;
+  &--left-align-on-large{
+    @mixin atLarge{
+      text-align: left;
+    }
   }
 }
