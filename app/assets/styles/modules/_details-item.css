@@ -1,0 +1,40 @@
+.details-item{
+
+  &__title{
+    background-color: $mainYellow;
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: .3em;
+  }
+
+  &__description{
+    background-color: $mainBrown;
+    padding: 10px 2.25rem 30px 2.25rem;
+    font-size: 1.125rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    @mixin atLarge{
+      height: 230px;
+    }
+
+    li{
+      padding: 5px 0;
+    }
+  }
+
+  &__description--red{
+    color: $mainRed;
+  }
+
+  &__link{
+    text-align: center;
+  }
+}

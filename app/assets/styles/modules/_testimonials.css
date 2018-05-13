@@ -1,8 +1,4 @@
 .testimonials{
-  position: relative;
-
-  &__text-content{
-  }
 
   &__testimony{
     height: 160px;

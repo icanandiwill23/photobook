@@ -11,7 +11,7 @@
   word-spacing: 1.5px;
 
   @mixin atSmall{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding: 18px 36px;
   }
 
