@@ -1,14 +1,20 @@
 .header{
   padding-top: 22px;
   padding-bottom: 22px;
+  text-align: center;
 
   &__nav-menu-icon{
     position: relative;
     height: 19px;
     width: 26px;
-    display: inline-block;
-    margin-right: 65px;
-    top: 5px;
+    top: 8px;
+    float: right;
+
+    @mixin atMedium{
+      float: left;
+      display: inline-block;
+      margin-right: 65px;
+    }
 
     &:before{
       content: "";
@@ -41,20 +47,59 @@
 
   &__logo{
     text-indent: -9999px;
-    display: inline-block;
     padding: 7px 0;
+    display: block;
+
+    @mixin atMedium{
+      float: left;
+    }
   }
 
+  &__menu-content{
+    @mixin clearfix;
+
+    display: block;
+    text-align: center;
+    /* display: none; */
+
+    &--b-margin-until-medium{
+      margin-bottom: 15px;
+
+      @mixin atMedium{
+        margin-bottom: 10px;
+      }
+    }
+
+    &--t-margin-until-medium{
+      margin-top: 10px;
+
+      @mixin atMedium{
+        margin-top: 0;
+      }
+    }
+  }
+
+
   &__nav-logout{
+    @mixin clearfix;
+
     float: right;
+    @mixin atMedium{
+      float: right;
+    }
   }
 
   &__nav-contact-no{
-    float: right;
-    margin: 0 54px 0 0;
+
+    float: left;
     background-color: $mainYellow;
     padding: 10px 40px;
     border-radius: 10px;
+
+    @mixin atMedium{
+      float: right;
+      margin: 0 54px 0 0;
+    }
 
     p{
       border-bottom: 1px dotted #000;

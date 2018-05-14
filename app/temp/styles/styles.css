@@ -1193,15 +1193,24 @@ img{
 .header{
   padding-top: 22px;
   padding-bottom: 22px;
+  text-align: center;
 }
 
 .header__nav-menu-icon{
     position: relative;
     height: 19px;
     width: 26px;
-    display: inline-block;
-    margin-right: 65px;
-    top: 5px;
+    top: 8px;
+    float: right;
+  }
+
+@media only screen and (min-width: 768px){
+
+.header__nav-menu-icon{
+      float: left;
+      display: inline-block;
+      margin-right: 65px
+  }
   }
 
 .header__nav-menu-icon:before{
@@ -1234,23 +1243,105 @@ img{
 
 .header__logo{
     text-indent: -9999px;
-    display: inline-block;
     padding: 7px 0;
+    display: block;
+  }
+
+@media only screen and (min-width: 768px){
+
+.header__logo{
+      float: left
+  }
+  }
+
+.header__menu-content{
+
+    display: block;
+    text-align: center;
+  }
+
+.header__menu-content:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* display: none; */
+
+.header__menu-content--b-margin-until-medium{
+      margin-bottom: 15px;
+    }
+
+@media only screen and (min-width: 768px){
+
+.header__menu-content--b-margin-until-medium{
+        margin-bottom: 10px
+    }
+  }
+
+.header__menu-content--t-margin-until-medium{
+      margin-top: 10px;
+    }
+
+@media only screen and (min-width: 768px){
+
+.header__menu-content--t-margin-until-medium{
+        margin-top: 0
+    }
   }
 
 .header__nav-logout{
+
     float: right;
   }
 
+.header__nav-logout:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media only screen and (min-width: 768px){
+
+.header__nav-logout{
+      float: right
+  }
+  }
+
 .header__nav-contact-no{
-    float: right;
-    margin: 0 54px 0 0;
+
+    float: left;
     background-color: #ffd200;
     padding: 10px 40px;
     border-radius: 10px;
+  }
+
+@media only screen and (min-width: 768px){
+
+.header__nav-contact-no{
+      float: right;
+      margin: 0 54px 0 0
+  }
   }
 
 .header__nav-contact-no p{
       border-bottom: 1px dotted #000;
       margin: 0;
     }
+
+.primary-nav{
+  display: inline-block;
+}
+
+.primary-nav ul{
+    padding: 0;
+    margin: 0;
+  }
+
+.primary-nav li{
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }

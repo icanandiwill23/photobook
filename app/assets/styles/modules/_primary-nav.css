@@ -1,0 +1,16 @@
+.primary-nav{
+  display: inline-block;
+
+  ul{
+    padding: 0;
+    margin: 0;
+  }
+
+  li{
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+}
