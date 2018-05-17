@@ -1336,12 +1336,33 @@ img{
 .primary-nav ul{
     padding: 0;
     margin: 0;
+    display: flex;
   }
 
 .primary-nav li{
     list-style: none;
     float: left;
-    padding-right: 20px;
-    font-size: 1.2rem;
     text-transform: uppercase;
+  }
+
+@media only screen and (min-width: 768px){
+
+.primary-nav li{
+      padding-right: 20px
+  }
+  }
+
+.primary-nav a{
+    font-size: .8rem;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 7px 10px;
+  }
+
+@media only screen and (min-width: 530px){
+
+.primary-nav a{
+      font-size: 1.2rem
+  }
   }
