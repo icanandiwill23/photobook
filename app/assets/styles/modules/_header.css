@@ -79,6 +79,10 @@
     @mixin atMedium{
       height: 100%;
     }
+
+    @mixin atLarge{
+      opacity: 1;
+    }
   }
 
   &__menu-content--is-visible{
