@@ -6,14 +6,36 @@
   right: 0;
   background-color: rgba(255, 255, 255, .95);
   text-align: center;
-  display: none;
 
   &__description{
     width: 30rem;
+    margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     font-size: 1.256rem;
     font-weight: 300;
     line-height: 1.65;
+  }
+
+  &__inner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--close-x{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 2rem;
+    transform: scaleX(1.5);
+    transform-origin: 100% 0;
+    transition: all .3s ease-out;
+
+    &:hover{
+      cursor: pointer;
+      color: $mainRed;
+    }
   }
 }

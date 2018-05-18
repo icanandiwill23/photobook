@@ -4,16 +4,21 @@
     display: inline-block;
     height: 72px;
     width: 72px;
+    background-color: $mainYellow;
+    position: relative;
+    margin: 0 10px;
   }
 
   .icon{
     display: block;
     background-color: #fff;
-    transform: scale(2);
-    transform-origin: 0 0;
+    transform: translate(-50%, -50%) scale(2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
   }
 
   &--close-x{
-    
+
   }
 }
