@@ -20,6 +20,8 @@
   &__pre-title{
     margin: 0;
     position: absolute;
+    width: 140px;
+    max-width: 140px;
     top: -30px;
     left: 50%;
     background-color: $mainYellow;

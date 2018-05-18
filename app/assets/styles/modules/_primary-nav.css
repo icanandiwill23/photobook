@@ -1,5 +1,24 @@
 .primary-nav{
   display: inline-block;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  padding: 12px 0;
+  transition: all .3s ease-out;
+
+  @mixin atLarge{
+    padding: 0;
+  }
+
+  &--is-visible{
+    display: inline-block;
+    height: 50px;
+    opacity: 1;
+
+    @mixin atLarge{
+      height: 36px;
+    }
+  }
 
   ul{
     padding: 0;
@@ -26,6 +45,10 @@
 
     @mixin atSmall{
       font-size: 1.2rem;
+    }
+
+    &:hover{
+      text-decoration: underline;
     }
   }
 }

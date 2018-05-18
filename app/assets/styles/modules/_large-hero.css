@@ -1,6 +1,10 @@
 .large-hero{
   position: relative;
 
+  &__image{
+    display: block;
+  }
+
   &__text-content{
     text-align: center;
     position: absolute;

@@ -1,7 +1,12 @@
 .header{
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 10px;
+  padding-bottom: 0;
   text-align: center;
+
+  @mixin atLarge{
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
 
   &__nav-menu-icon{
     position: relative;
@@ -46,6 +51,7 @@
   }
 
   &__logo{
+    @mixin clearfix;
     text-indent: -9999px;
     padding: 7px 0;
     display: block;
@@ -57,18 +63,10 @@
 
   &__menu-content{
     @mixin clearfix;
-
-    display: block;
-    text-align: center;
-    /* display: none; */
-
-    &--b-margin-until-medium{
-      margin-bottom: 15px;
-
-      @mixin atMedium{
-        margin-bottom: 10px;
-      }
-    }
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
 
     &--t-margin-until-medium{
       margin-top: 10px;
@@ -77,20 +75,25 @@
         margin-top: 0;
       }
     }
-  }
 
-
-  &__nav-logout{
-    @mixin clearfix;
-
-    float: right;
     @mixin atMedium{
-      float: right;
+      height: 100%;
     }
   }
 
-  &__nav-contact-no{
+  &__menu-content--is-visible{
+    opacity: 1;
+    overflow: visible;
+    padding-bottom: 15px;
+  }
 
+  &__nav-logout{
+    @mixin clearfix;
+    float: right;
+  }
+
+  &__nav-contact-no{
+    @mixin clearfix;
     float: left;
     background-color: $mainYellow;
     padding: 10px 40px;
