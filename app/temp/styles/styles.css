@@ -1849,8 +1849,10 @@ img{
   text-align: center;
 }
 
+/* visibility: hidden; */
+
 .modal__description{
-    width: 30rem;
+    width: 15rem;
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
@@ -1858,6 +1860,15 @@ img{
     font-weight: 300;
     line-height: 1.65;
   }
+
+@media only screen and (min-width: 768px){
+
+.modal__description{
+      width: 30rem
+  }
+  }
+
+/* display: none; */
 
 .modal__inner{
     position: absolute;

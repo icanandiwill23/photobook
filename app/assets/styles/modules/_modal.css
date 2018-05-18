@@ -6,15 +6,21 @@
   right: 0;
   background-color: rgba(255, 255, 255, .95);
   text-align: center;
+  /* display: none; */
+  /* visibility: hidden; */
 
   &__description{
-    width: 30rem;
+    width: 15rem;
     margin-top: 0;
     margin-right: auto;
     margin-left: auto;
     font-size: 1.256rem;
     font-weight: 300;
     line-height: 1.65;
+
+    @mixin atMedium{
+      width: 30rem;
+    }
   }
 
   &__inner{
