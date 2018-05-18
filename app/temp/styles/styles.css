@@ -1420,3 +1420,29 @@ img{
 .primary-nav a:hover{
       text-decoration: underline;
     }
+
+.reveal-item--up{
+    opacity: 0;
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
+    transition: all 2s ease-out;
+  }
+
+.reveal-item--up--is-revealed{
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+
+.reveal-item--fade-in{
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    transition: all 1s ease-out;
+  }
+
+.reveal-item--fade-in--is-revealed{
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }

@@ -1,0 +1,24 @@
+.reveal-item{
+
+  &--up{
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 2s ease-out;
+
+    &--is-revealed{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &--fade-in{
+    opacity: 0;
+    transform: scale(1.2);
+    transition: all 1s ease-out;
+
+    &--is-revealed{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
