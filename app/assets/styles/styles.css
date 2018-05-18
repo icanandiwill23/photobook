@@ -20,3 +20,5 @@
 @import "modules/_header";
 @import "modules/_primary-nav";
 @import 'modules/_reveal-item';
+@import "../../../node_modules/slick-carousel/slick/slick";
+@import "../../../node_modules/slick-carousel/slick/slick-theme";

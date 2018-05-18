@@ -1,5 +1,11 @@
 .testimonials{
 
+  & .slick-prev:before{
+    display: none;
+  }
+
+
+
   &__testimony{
     height: 160px;
     width: 160px;
@@ -58,6 +64,7 @@
     text-decoration: none;
     color: #000;
     font-weight: 300;
+    padding-right: 14px;
 
     &:hover{
       text-decoration: underline;

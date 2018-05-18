@@ -14,6 +14,13 @@
     width: 26px;
     top: 8px;
     float: right;
+    transition: all .3s ease-out;
+
+    &.is-active{
+      position: relative;
+      top: 10px;
+      transform: scaleY(1.1);
+    }
 
     @mixin atMedium{
       float: left;

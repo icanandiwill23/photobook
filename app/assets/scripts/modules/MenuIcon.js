@@ -15,6 +15,7 @@ class MenuIcon{
   toggleMenu(){
     this.menuContent.toggleClass("header__menu-content--is-visible");
     this.primaryNav.toggleClass("primary-nav--is-visible");
+    this.menuIcon.toggleClass("is-active");
   }
 
 }
