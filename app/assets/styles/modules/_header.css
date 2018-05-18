@@ -83,7 +83,7 @@
       }
     }
 
-    @mixin atMedium{
+    @mixin atSmall{
       height: 100%;
     }
 

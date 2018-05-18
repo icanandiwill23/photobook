@@ -1,0 +1,19 @@
+.social-icons{
+
+  &__icon{
+    display: inline-block;
+    height: 72px;
+    width: 72px;
+  }
+
+  .icon{
+    display: block;
+    background-color: #fff;
+    transform: scale(2);
+    transform-origin: 0 0;
+  }
+
+  &--close-x{
+    
+  }
+}
