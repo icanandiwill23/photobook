@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
   </head>
-  <body>
+  <body id="photobook">
 
   <section id="nav" class="header">
     <div class="wrapper">
@@ -19,9 +19,11 @@
       </div>
 
       <div class="header__logo">
+        <a href="#photobook">
         <div class="header__logo__image icon icon--photobook-logo">
           Photobook
         </div>
+        </a>
       </div>
 
       <div class="header__menu-content header__menu-content--t-margin-until-medium">
@@ -37,10 +39,10 @@
 
       <div class="primary-nav">
         <ul>
-          <li><a href="#advantage">Advantage</a></li>
-          <li><a href="#ready-solutions">Ready Solutions</a></li>
-          <li><a href="#testimonials-id">Testimonials</a></li>
-          <li><a href="#more-info">More Info</a></li>
+          <li><a href="#advantage" id="advantage-link">Advantage</a></li>
+          <li><a href="#ready-solutions" id="ready-solutions-link">Ready Solutions</a></li>
+          <li><a href="#testimonials-id" id="testimonials-link">Testimonials</a></li>
+          <li><a href="#more-info" id="more-info-link">More Info</a></li>
 
         </ul>
       </div>
@@ -107,7 +109,7 @@
     </div>
   </div>
 
-  <section id="advantage" class="page-section page-section--dirty-white">
+  <section id="advantage" class="page-section page-section--dirty-white" data-matching-link="#advantage-link">
     <div class="wrapper">
       <h2 class="section-title section-title--no-t-margin"><span class="section-title__title-start">A</span>dvantage</h2>
 
@@ -149,7 +151,7 @@
   </section>
 
 
-  <section id="ready-solutions" class="page-section">
+  <section id="ready-solutions" class="page-section" data-matching-link="#ready-solutions-link">
     <div class="wrapper wrapper--no-padding-until-large">
       <h2 class="section-title section-title--no-t-margin"><span class="section-title__title-start">R</span>eady Solutions</h2>
 
@@ -206,7 +208,7 @@
     </div>
   </section>
 
-   <section id="testimonials-id" class="page-section page-section--testimonials-bg">
+   <section id="testimonials-id" class="page-section page-section--testimonials-bg" data-matching-link="#testimonials-link">
      <div class="wrapper">
        <h2 class="section-title section-title--no-t-margin section-title--left-align-on-large">T<small>estimonials</small></h2>
 
@@ -257,7 +259,7 @@
      </div>
    </section>
 
-   <section id="more-info" class="page-section">
+   <section id="more-info" class="page-section" data-matching-link="#more-info-link">
      <div class="wrapper wrapper--no-padding-until-large">
        <div class="row row--gutters">
          <div class="row__large-4">
