@@ -1,11 +1,17 @@
 .large-hero{
   position: relative;
+  padding-top: 74px;
+
+  @mixin atMedium{
+    padding-top: 90px;
+  }
 
   &__image{
     display: block;
   }
 
   &__text-content{
+    padding-top: 90px;
     text-align: center;
     position: absolute;
     top: 10%;
