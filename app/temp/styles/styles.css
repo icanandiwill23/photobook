@@ -654,6 +654,10 @@ img{
     background-image: url("/assets/images/sprites/sprites-39d87fba.svg");
   }
 
+.no-svg .icon{
+    background-image: url("/assets/images/sprites/sprites-39d87fba.png");
+  }
+
 .icon--bbc{
     height: 24px;
     width: 24px;

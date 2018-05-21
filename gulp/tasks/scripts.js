@@ -1,7 +1,7 @@
 const gulp = require("gulp"),
       webpack = require("webpack");
 
-gulp.task("scripts", function(){
+gulp.task("scripts", ["modernizr"], function(){
   webpack({
     mode: "development",
     entry: {

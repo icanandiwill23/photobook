@@ -5,8 +5,20 @@ const gulp      = require("gulp"),
       svg2png   = require("gulp-svg2png");
 
 config = {
+  shape: {
+    spacing: {
+      padding: 2
+    }
+  },
   mode: {
     css: {
+      variables: {
+        "replaceSvgWithPng": function(){
+          return function(sprite, render){
+            return render(sprite).split(".svg").join(".png")
+          }
+        }
+      },
       sprite: "sprites.svg",
       render: {
         css: {
