@@ -37,7 +37,7 @@
     }
   }
 
-  &__author{
+  .flexbox &__author{
     border: 1px solid #000;
     width: 85px;
     display: flex;

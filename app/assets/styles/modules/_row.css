@@ -29,7 +29,7 @@
   }
 
   @mixin atMedium{
-    &--equal-height-on-medium{
+    .flexbox &--equal-height-on-medium{
       display: flex;
 
       & > div{
@@ -54,7 +54,7 @@
   }
 
   @mixin atLarge{
-    &--equal-height-on-large{
+    .flexbox &--equal-height-on-large{
       display: flex;
 
       & > div{
