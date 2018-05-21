@@ -651,11 +651,11 @@ img{
 /* Do not edit modules/_sprites/css instead go to gulp/templates/sprites */
 
 .icon{
-    background-image: url("/assets/images/sprites/sprites-5f770578.svg");
+    background-image: url("../../assets/images/sprites/sprites-5f770578.svg");
   }
 
 .no-svg .icon{
-    background-image: url("/assets/images/sprites/sprites-5f770578.png");
+    background-image: url("../../assets/images/sprites/sprites-5f770578.png");
   }
 
 .icon--bbc{
@@ -795,7 +795,7 @@ img{
 
 @media only screen and (min-width: 992px){
       .page-section--testimonials-bg.lazyloaded{
-        background: url("/assets/images/testimonials-bg-hi-dpi.jpg") no-repeat top center;
+        background: url("../../assets/images/testimonials-bg-hi-dpi.jpg") no-repeat top center;
         background-size: cover;
       }
   }
