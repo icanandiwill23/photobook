@@ -9,6 +9,13 @@
   text-decoration: none;
   color: #000;
   word-spacing: 1.5px;
+  transition: all .3s ease-out;
+
+  &:hover{
+    background-color: #7f7f7f;
+    color: #fff;
+    border-color: #fff;
+  }
 
   @mixin atSmall{
     font-size: 1.75rem;
@@ -19,6 +26,12 @@
     background-color: $mainRed;
     color: #fff;
     border-color: transparent;
+
+    &:hover{
+      background-color: transparent;
+      color: $mainRed;
+      border-color: $mainRed;
+    }
   }
 
   @mixin atLarge{

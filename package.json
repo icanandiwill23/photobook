@@ -18,6 +18,7 @@
   "homepage": "https://github.com/icanandiwill23/photobook#readme",
   "dependencies": {
     "jquery": "^3.3.1",
+    "lazysizes": "^4.0.2",
     "normalize.css": "^8.0.0",
     "slick-carousel": "^1.8.1"
   },

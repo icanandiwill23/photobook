@@ -4,10 +4,13 @@ const gulp = require("gulp"),
 gulp.task("scripts", function(){
   webpack({
     mode: "development",
-    entry: __dirname + "/../../app/assets/scripts/App.js",
+    entry: {
+      App: __dirname + "/../../app/assets/scripts/App.js",
+      Vendor: __dirname + "/../../app/assets/scripts/Vendor.js"
+    },
     output: {
       path: __dirname + "/../../app/temp/scripts",
-      filename: "App.js"
+      filename: "[name].js"
     },
     module: {
       rules: [

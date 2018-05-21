@@ -456,7 +456,14 @@ img{
   text-decoration: none;
   color: #000;
   word-spacing: 1.5px;
+  transition: all .3s ease-out;
 }
+
+.btn:hover{
+    background-color: #7f7f7f;
+    color: #fff;
+    border-color: #fff;
+  }
 
 @media only screen and (min-width: 530px){
 
@@ -471,6 +478,12 @@ img{
     color: #fff;
     border-color: transparent;
   }
+
+.btn--red:hover{
+      background-color: transparent;
+      color: #e11a27;
+      border-color: #e11a27;
+    }
 
 @media only screen and (min-width: 992px){
     .btn--t-margin-at-large{
@@ -520,6 +533,7 @@ img{
     top: 50%;
     right: -108%;
     width: 100%;
+    height: 7px;
     max-width: 130px;
     display: none;
   }
@@ -776,11 +790,10 @@ img{
   }
 
 @media only screen and (min-width: 992px){
-
-.page-section--testimonials-bg{
-      background: url("/assets/images/testimonials-bg-hi-dpi.jpg") no-repeat top center;
-      background-size: cover
-  }
+      .page-section--testimonials-bg.lazyloaded{
+        background: url("/assets/images/testimonials-bg-hi-dpi.jpg") no-repeat top center;
+        background-size: cover;
+      }
   }
 
 .section-title{

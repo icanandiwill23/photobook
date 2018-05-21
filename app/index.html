@@ -9,6 +9,8 @@
     <meta name="description" content="Your photos, your book. We create a collection of your memories">
 
     <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+
+    <script src="temp/scripts/Vendor.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body id="photobook">
 
@@ -29,7 +31,7 @@
       <div class="header__menu-content header__menu-content--t-margin-until-medium">
 
         <div class="header__nav-logout">
-          <img src="assets/images/icons/logout.svg" alt="Logout Icon">
+          <div class="icon icon--logout"></div>
         </div>
 
         <div class="header__nav-contact-no">
@@ -70,7 +72,7 @@
           <div class="feature__item">
             <div class="feature__item__image-container">
               <div class="icon icon--cloud"></div>
-              <img class="feature__item__dashed" src="assets/images/icons/dashed.svg" height="7px" alt="">
+              <img class="feature__item__dashed" src="assets/images/icons/dashed.svg" alt="">
             </div>
             <h2 class="feature__item__title">Download photos</h2>
           </div>
@@ -116,7 +118,7 @@
         <div class="row__large-4">
           <div class="advantage-item">
             <div class="advantage-item__image">
-              <img sizes="267px" srcset="assets/images/social-icons.jpg 267w, assets/images/social-icons-hi-dpi.jpg 534w" alt="Social Icons Link to Photobook">
+              <img class="lazyload" sizes="267px" data-srcset="assets/images/social-icons.jpg 267w, assets/images/social-icons-hi-dpi.jpg 534w" alt="Social Icons Link to Photobook">
             </div>
             <h3 class="advantage-item__title">Import photos <br>from your social networks</h3>
             <p class="advantage-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, cumque! Lorem ipsum dolor sit amet.</p>
@@ -126,7 +128,7 @@
         <div class="row__large-4">
           <div class="advantage-item">
             <div class="advantage-item__image">
-              <img sizes="267px" srcset="assets/images/cat.jpg 267w, assets/images/cat-hi-dpi.jpg 534w" alt="Our photo of cat">
+              <img class="lazyload" sizes="267px" data-srcset="assets/images/cat.jpg 267w, assets/images/cat-hi-dpi.jpg 534w" alt="Our photo of cat">
             </div>
             <h3 class="advantage-item__title">Photo editing</h3>
             <p class="advantage-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ipsam perspiciatis eligendi, excepturi sunt id.</p>
@@ -137,7 +139,7 @@
         <div class="row__large-4">
           <div class="advantage-item">
             <div class="advantage-item__image">
-              <img sizes="267px" srcset="assets/images/template.jpg 267w, assets/images/template-hi-dpi.jpg 534w" alt="Office Template & Cubicle">
+              <img class="lazyload" sizes="267px" data-srcset="assets/images/template.jpg 267w, assets/images/template-hi-dpi.jpg 534w" alt="Office Template & Cubicle">
             </div>
             <h3 class="advantage-item__title">Templates</h3>
             <p class="advantage-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -207,14 +209,14 @@
     </div>
   </section>
 
-   <section id="testimonials-id" class="page-section page-section--testimonials-bg" data-matching-link="#testimonials-link">
+   <section id="testimonials-id" class="page-section page-section--testimonials-bg lazyload" data-matching-link="#testimonials-link">
      <div class="wrapper">
        <h2 class="section-title section-title--no-t-margin section-title--left-align-on-large">T<small>estimonials</small></h2>
 
        <div class="testimonials generic-content-container">
          <div class="testimonials__item">
            <div class="testimonials__testimony">
-             <img sizes="166px" srcset="assets/images/john-doe.jpg 166w, assets/images/john-doe-hi-dpi.jpg 332w" alt="John Doe Wedding Photographer">
+             <img class="lazyload" sizes="166px" data-srcset="assets/images/john-doe.jpg 166w, assets/images/john-doe-hi-dpi.jpg 332w" alt="John Doe Wedding Photographer">
            </div>
            <div class="testimonials__testimony-info">
              <h3 class="testimonials__name">J<small>ohn</small> D<small>oe</small></h3>
@@ -235,7 +237,7 @@
          <div class="testimonials__item">
 
            <div class="testimonials__testimony">
-             <img sizes="267px" srcset="assets/images/cat.jpg 267w, assets/images/cat-hi-dpi.jpg 534w" alt="Serg Canayon Web Developer">
+             <img class="lazyload" sizes="267px" data-srcset="assets/images/cat.jpg 267w, assets/images/cat-hi-dpi.jpg 534w" alt="Serg Canayon Web Developer">
            </div>
            <div class="testimonials__testimony-info">
              <h3 class="testimonials__name">S<small>erg</small> C<small>anayon</small></h3>
@@ -346,9 +348,9 @@
              <div class="row__large-6 row__large-offset-6">
                <div class="section-footer__nav section-footer__nav--b-margin section-footer__nav--inline">
                  <ul>
-                   <li><img src="assets/images/icons/facebook.svg" alt=""></li>
-                   <li><img src="assets/images/icons/bbc.svg" alt=""></li>
-                   <li><img src="assets/images/icons/instagram.svg" alt=""></li>
+                   <li><div class="icon icon--facebook"></div></li>
+                   <li><div class="icon icon--bbc"></div></li>
+                   <li><div class="icon icon--instagram"></div></li>
                  </ul>
                </div>
 
