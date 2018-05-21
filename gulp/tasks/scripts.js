@@ -3,7 +3,7 @@ const gulp = require("gulp"),
 
 gulp.task("scripts", ["modernizr"], function(){
   webpack({
-    mode: "development",
+    mode: "production",
     entry: {
       App: __dirname + "/../../app/assets/scripts/App.js",
       Vendor: __dirname + "/../../app/assets/scripts/Vendor.js"
