@@ -7,6 +7,14 @@ class SlideUpOnScroll{
     this.offsetPercentage = offSet;
     this.hideInitially();
     this.slideUpWaypoint();
+    this.lazyImages = $(".lazyload");
+    this.lazyImagesRefresh();
+  }
+
+  lazyImagesRefresh(){
+    this.lazyImages.on("load", function(){
+      return Waypoint.refreshAll();
+    });
   }
 
   hideInitially(){
