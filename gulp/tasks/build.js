@@ -21,7 +21,7 @@ gulp.task("deleteDocs", ["icons"], function(){
 });
 
 gulp.task("generalFiles", ["deleteDocs"], function(){
-  let pathsToCopy = [
+  var pathsToCopy = [
     "./app/**/*",
     "!./app/assets/images/**/*",
     "!./app/assets/styles/**/*",
