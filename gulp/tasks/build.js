@@ -23,12 +23,15 @@ gulp.task("deleteDocs", ["icons"], function(){
 gulp.task("generalFiles", ["deleteDocs"], function(){
   var pathsToCopy = [
     "./app/**/*",
+    "./app/.htaccess",
+    "!./app/index.html",
     "!./app/assets/images/**/*",
     "!./app/assets/styles/**/*",
     "!./app/assets/scripts/**/*",
     "!./app/temp",
     "!./app/temp/**/*"
   ]
+
   return gulp.src(pathsToCopy)
     .pipe(gulp.dest("./docs"));
 });
